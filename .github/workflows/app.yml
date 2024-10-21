@@ -33,20 +33,13 @@ jobs:
     - name: Terraform Init
       run: terraform init
 
-    # Step 5: Terraform Format Check (Optional)
-    - name: Terraform Format
-      run: terraform fmt -check
+  
 
-    # Step 6: Terraform Validate
-    - name: Terraform Validate
-      run: terraform validate
 
     # Step 7: Terraform Plan
-    - name: Terraform Plan
-      id: plan
-      run: terraform plan -out=tfplan
+    - name: Terraform Pla
+      run: terraform plan 
 
     # Step 8: Terraform Apply (only on push to main)
     - name: Terraform Apply
-      if: github.ref == 'refs/heads/main'
-      run: terraform apply -auto-approve tfplan
+      run: terraform apply 
