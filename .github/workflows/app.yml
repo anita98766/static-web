@@ -42,4 +42,4 @@ jobs:
 
     # Step 8: Terraform Apply (only on push to main)
     - name: Terraform Apply
-      run: terraform apply 
+      run: terraform apply -auto-approve
