@@ -3,7 +3,7 @@ provider "aws" {
 }
 
 resource "aws_s3_bucket" "website_bucket" {
-  bucket = "myfirstbucket50912300"
+  bucket = "myfirstbucket5091230011"
 }
 
 resource "aws_s3_object" "website_bucket" {
@@ -56,7 +56,7 @@ resource "aws_cloudfront_distribution" "cdn_static_site" {
   comment             = "my cloudfront in front of the s3 bucket"
 
   origin {
-    domain_name              = aws_s3_bucket.website_bucket.bucket_regional_domain_name
+    domain_name              = aws_s3_bucket.website_bucket1.bucket_regional_domain_name
     origin_id                = "s3_origin_id"
     origin_access_control_id = aws_cloudfront_origin_access_control.default.id
   }
