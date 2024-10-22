@@ -92,7 +92,7 @@ resource "aws_cloudfront_distribution" "cdn_static_site" {
 }
 
 resource "aws_cloudfront_origin_access_control" "default" {
-  name                              = "example6"
+  name                              = "example7"
   description                       = "description of OAC"
   origin_access_control_origin_type = "s3"
   signing_behavior                  = "always"
