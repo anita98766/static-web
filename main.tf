@@ -3,7 +3,7 @@ provider "aws" {
 }
 
 resource "aws_s3_bucket" "website_bucket" {
-  bucket = "myfirstbucket5088aa"
+  bucket = "myfirstbucket508899"
 }
 
 resource "aws_s3_object" "website_bucket" {
