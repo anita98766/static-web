@@ -3,7 +3,7 @@ provider "aws" {
 }
 
 resource "aws_s3_bucket" "website_bucket" {
-  bucket = "myfirstbucket508899"
+  bucket = "myfirstbucket5088991"
 }
 
 resource "aws_s3_object" "website_bucket" {
@@ -92,7 +92,7 @@ resource "aws_cloudfront_distribution" "cdn_static_site" {
 }
 
 resource "aws_cloudfront_origin_access_control" "default" {
-  name                              = "exa10"
+  name                              = "exa11"
   description                       = "description of OAC"
   origin_access_control_origin_type = "s3"
   signing_behavior                  = "always"
